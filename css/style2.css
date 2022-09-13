@@ -1,0 +1,410 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(248, 223, 255);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+
+/*Main index*/
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 1000;
+    padding: 20px;
+    background-color: black;
+    color: rgb(242, 231, 247);
+    text-align: center;
+
+
+
+}
+
+.grid1 {
+    overflow: hidden;
+    display: grid;
+    grid-auto-flow: column;
+    place-items: center;
+    gap: 1.5rem;
+}
+
+.grid1 img {
+    height: 300px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.grid2 {
+    overflow: hidden;
+    display: grid;
+    grid-auto-flow: column;
+    place-items: center;
+    gap: 1.5rem;
+}
+
+.grid2 img {
+    width: 700px;
+    height: 200px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    padding: 10px;
+}
+
+.video {
+    overflow: hidden;
+    padding: 40px;
+}
+
+
+/*footer*/
+footer {
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 2rem 8%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: auto;
+}
+
+.logo {
+    height: 100px;
+    margin-bottom: 1rem;
+    padding-left: 10px;
+
+}
+
+
+.footer-menu-container {
+    list-style: none;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    background-color: black;
+
+}
+
+.menu-item {
+    margin: 1rem 1.5rem;
+    cursor: pointer;
+    opacity: 0.6;
+    text-align: center;
+    padding-right: 20px;
+}
+
+.menu-item:hover {
+    opacity: 1;
+}
+
+/*main skate*/
+
+.grid-skate {
+    overflow: hidden;
+    display: grid;
+   grid-template-columns: auto auto auto;
+    place-items: center;
+    gap: 1.5rem;
+    padding: 20px;
+}
+
+.grid-skate img {
+    height: 300px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+/*main ropa*/
+
+.tabla-medidas {
+   padding: 30px;
+   display: grid;
+   grid-template-rows: auto;
+   place-items: center;
+ }
+
+.grid-ropa {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    place-items: center;
+    gap: 1.5rem;
+padding: 20px;
+
+
+}
+
+.grid-ropa img {
+    height: 300px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+
+/*main Accesorios*/
+
+.grid-acc {
+    overflow: hidden;
+    display: grid;
+    grid-auto-flow: column;
+    place-items: center;
+    gap: 1.5rem;
+}
+
+.grid-acc img {
+    height: 300px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+/*main Galeria*/
+
+.slider {
+    width: 100%;
+    overflow: scroll;
+}
+
+.slider ul {
+    display: flex;
+    animation: cambio 0 alternate linear;
+}
+
+.slider li {
+    width: 100%;
+    list-style: none;
+}
+
+.slider img {
+    height: 100%;
+}
+
+@keyframes cambio {
+    0% {
+        margin-left: 0;
+    }
+
+    20% {
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: -100%;
+    }
+
+    45% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -200%;
+    }
+
+    70% {
+        margin-left: -300%;
+    }
+
+    75% {
+        margin-left: -300;
+    }
+
+    100% {
+        margin-left: -300;
+    }
+
+}
+
+
+@media (max-width: 914px) {
+    .grid1 {
+        grid-auto-flow: row;
+    }
+
+    .grid1 img {
+        width: 200px;
+        height: 200px;
+        padding: 10px;
+    }
+
+    .grid2 iframe {
+        width: 500px;
+        height: 300px;
+        padding: 10px;
+
+    }
+
+    .grid2 {
+        flex-direction: column;
+    }
+
+    .grid2 img {
+        width: 500px;
+        height: 150px;
+        padding: 10px;
+    }
+
+    footer {
+        width: 100%;
+        height: 200px;
+
+        bottom: 0;
+        left: 0;
+        padding-top: 60px;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: auto;
+    }
+
+    .logo {
+        height: 50px;
+        margin-bottom: 1rem;
+        align-items: center;
+        padding-left: 5px;
+    }
+
+
+    .footer-menu-container {
+        list-style: none;
+        color: rgb(255, 255, 255);
+        font-size: 10px;
+
+    }
+
+    .menu-item {
+        margin: 1rem 1.5rem;
+        cursor: pointer;
+        opacity: 0.6;
+        text-align: center;
+        padding-right: 20px;
+    }
+
+    .menu-item:hover {
+        opacity: 1;
+    }
+
+    .grid-skate {
+        grid-auto-flow: row;
+    }
+
+    .grid-skate img {
+        width: 170px;
+        height: 170px;
+        padding: 10px;
+    }
+
+    .grid-ropa {
+        grid-auto-flow: row;
+    }
+
+    .grid-ropa img {
+        width: 200px;
+        height: 200px;
+        padding: 10px;
+    }
+    
+
+    .grid-acc {
+        grid-auto-flow: row;
+    }
+
+    .grid-acc img {
+        width: 200px;
+        height: 200px;
+        padding: 10px;
+    }
+}
+
+.text1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 500px;
+    padding: 30px;
+    background-color: black;
+    height: 10px;
+    color: rgb(242, 231, 247);
+    text-align: center;
+}
+
+
+
+@media (max-width: 520px) {
+
+    .grid1 {
+        grid-auto-flow: row;
+    }
+
+    .grid1 img {
+        width: 150px;
+        height: 150px;
+        padding: 10px;
+    }
+
+    .grid2 iframe {
+        width: 300px;
+        height: 200px;
+        padding: 10px;
+
+    }
+
+    .grid2 {
+        flex-direction: column;
+    }
+
+    .grid2 img {
+        width: 320px;
+        height: 100px;
+        padding: 10px;
+    }
+
+    .grid-skate {
+        grid-auto-flow: row;
+    }
+
+    .grid-skate img {
+        width: 140px;
+        height: 140px;
+        padding: 10px;
+    }
+
+    .grid-ropa {
+        grid-auto-flow: row;
+    }
+
+    .grid-ropa img {
+        width: 150px;
+        height: 150px;
+        padding: 10px;
+    }
+
+    .grid-acc {
+        grid-auto-flow: row;
+    }
+
+    .grid-acc img {
+        width: 200px;
+        height: 200px;
+        padding: 10px;
+    }
+}
+
+.text1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: 500px;
+    padding: 15px;
+    background-color: black;
+    height: 10px;
+    color: rgb(242, 231, 247);
+    text-align: center;
+}
+
